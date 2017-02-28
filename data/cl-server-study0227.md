@@ -255,6 +255,10 @@ PreloadJSを使って画像の読み込み
 
 ---
 # Canvasからの変換
+```
+canvas.toDataURL('image/jpeg', 1.0); // image変換
+antimatter15/jsgif // gif変換
+```
 ---
 
 

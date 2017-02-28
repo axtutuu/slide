@@ -220,7 +220,7 @@ PreloadJSを使って画像の読み込み
 ---
 
 # 画像を描画
-クリスオリジンに注意
+クロスオリジンに注意
 
 ```
   / * Preload JS */
@@ -239,8 +239,29 @@ PreloadJSを使って画像の読み込み
 ```
 
 ---
+# Canvasの応用
+---
+# Canvasの事例
+
+---
+
+# Canvasの注意点
+* リソース制限
+  * RAMが256MB未満の端末では、3MB以下
+  * RAMが256MB以上の端末では、5MB以下
+  * http://lealog.hateblo.jp/entry/2013/03/21/212608
+* canvas size limit
+  * IE: height/width: 8,192 pixels
+
+---
+# Canvasからの変換
+---
+
 
 # CanvasとCreateJS
 CanvasのAPI
 http://www.html5.jp/canvas/ref.html
+
+---
+
 

@@ -220,8 +220,7 @@ PreloadJSを使って画像の読み込み
 ---
 
 # 画像を描画
-クロスオリジンに注意
-
+※ CORSに注意
 ```
   / * Preload JS */
   const canvasPreload = doc.querySelector('.js-canvas-preload');
@@ -238,9 +237,9 @@ PreloadJSを使って画像の読み込み
   });
 ```
 
+
 ---
-# Canvasの応用
----
+
 # Canvasの事例
 
 ---
@@ -252,20 +251,18 @@ PreloadJSを使って画像の読み込み
   * http://lealog.hateblo.jp/entry/2013/03/21/212608
 * canvas size limit
   * IE: height/width: 8,192 pixels
-
+* Retaina対応
 ---
+
 # Canvasからの変換
 ```
 canvas.toDataURL('image/jpeg', 1.0); // image変換
+canvas.toBlob() // Firefox only
+https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement
 antimatter15/jsgif // gif変換
+
 ```
 ---
 
 
-# CanvasとCreateJS
-CanvasのAPI
-http://www.html5.jp/canvas/ref.html
-
----
-
-
+# おわり

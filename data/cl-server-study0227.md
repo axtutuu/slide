@@ -123,6 +123,15 @@ EaseLJSを使用したcanvasの操作
 
 ---
 
+# RMagic
+https://rmagick.github.io/image1.html#composite
+```
+image.composite(image2, Magick::CenterGravity,
+                        Magick::OverCompositeOp)
+```
+
+---
+
 # アニメーション
 TweenJSを使用したアニメーション
 
@@ -143,7 +152,6 @@ TweenJSを使用したアニメーション
   createjs.Ticker.addEventListener('tick', ()=>{
     stageTween.update();
   });
-
 ```
 
 ---
@@ -194,7 +202,7 @@ to/ set / wait /call
 ---
 
 # イージング
-
+http://www.createjs.com/demos/tweenjs/tween_sparktable
 ```
   const canvasTween = doc.querySelector('.js-canvas-tween');
   const stageTween  = new createjs.Stage(canvasTween);
@@ -262,6 +270,7 @@ https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement
 antimatter15/jsgif // gif変換
 
 ```
+
 ---
 
 

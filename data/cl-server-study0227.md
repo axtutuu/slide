@@ -18,7 +18,6 @@ CanvasとCreateJS
 
 # Canvas API
 http://www.html5.jp/canvas/ref.html
-
 * canvas要素に全て吸収されるのでDOMイベントの設定が難しい 
   (座標とかで頑張れば)
 * オブジェクトの操作も大変 (状態管理など)
@@ -40,11 +39,10 @@ EaselJS is only compatible with browsers that support the HTML5 Canvas.
 ---
 
 # 本の紹介
+https://goo.gl/W6oehS
 * Chapter1 CreateJSを始める前に (Javascriptの基本)
-* CreateJS Suiteを使おう (EaseIJS/TweenJS/PreloadJS/SoundJSを使ったDemo)
-* CreateJSの応用
-
-![image](https://images-na.ssl-images-amazon.com/images/I/51-8ZPGIWHL._SX386_BO1,204,203,200_.jpg)
+* Chapter2 CreateJS Suiteを使おう (EaseIJS/TweenJS/PreloadJS/SoundJSを使ったDemo)
+* Chapter3 CreateJSの応用
 
 ---
 
@@ -78,6 +76,21 @@ EaseLJSを使用したcanvasの操作
   shape.x = shape.y = 50;
   stage.addChild(shape);
   stage.update();
+```
+
+---
+
+# Canvas APIの場合
+
+```
+const canvasElem = doc.querySelector('.js-canvas');
+const ctx = canvasElem.getContext('2d');
+
+ctx.beginPath();
+ctx.arc(100, 100, 25, 0, Math.PI*2, false);
+ctx.fillStyle = 'red';
+ctx.fill();
+ctx.closePath();
 ```
 
 ---
@@ -245,6 +258,10 @@ PreloadJSを使って画像の読み込み
   });
 ```
 
+---
+# CreateJSの応用
+http://createjs.com/demos/easeljs/spritesheet
+http://ics-web.jp/projects/particle-develop/
 
 ---
 
@@ -265,11 +282,17 @@ PreloadJSを使って画像の読み込み
 # Canvasからの変換
 ```
 canvas.toDataURL('image/jpeg', 1.0); // image変換
-canvas.toBlob() // Firefox only
+canvas.toBlob()                     // Firefox only
 https://developer.mozilla.org/ja/docs/Web/API/HTMLCanvasElement
-antimatter15/jsgif // gif変換
-
+antimatter15/jsgif                 // gif変換
+SVGExporter                        // svg
+https://github.com/CreateJS/EaselJS/tree/master/extras/SVGExporter
 ```
+
+---
+
+# おまけ
+![img](./image.png)
 
 ---
 
